@@ -11,9 +11,7 @@
         <td>
             {{link_to_route ('products.show','Show',$product->id)}}
             {{link_to_route ('products.edit','Edit',$product->id)}}
-            {{Form::open([
-            'method'=>delete,
-            'route'=>[product.destroy,])}}
+
             {{--{{link_to_route ('products.destroy','Delete',$product->id)}}--}}
             {{-- TODO : find how to destroy this stuff --}}
     </tr>

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b1e991ecb3eb0d6d7b3b813c915e04c",
-    "content-hash": "8affc6db624d76bcabe9b419213d302c",
+    "hash": "f60426dfd212023a6757caeb48efc5c6",
+    "content-hash": "ccd95f818be59edc3fef7d1bb0ff5e2e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -60,6 +60,55 @@
                 "preload"
             ],
             "time": "2015-11-09 22:51:51"
+        },
+        {
+            "name": "davejamesmiller/laravel-breadcrumbs",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davejamesmiller/laravel-breadcrumbs.git",
+                "reference": "460bf79e83ff9e3db1e3f1c40169d8893893f8ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davejamesmiller/laravel-breadcrumbs/zipball/460bf79e83ff9e3db1e3f1c40169d8893893f8ff",
+                "reference": "460bf79e83ff9e3db1e3f1c40169d8893893f8ff",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "illuminate/view": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "3.2.*|3.3.*",
+                "phpunit/phpunit": "4.*",
+                "satooshi/php-coveralls": "0.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DaveJamesMiller\\Breadcrumbs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Dave James Miller",
+                    "email": "dave@davejamesmiller.com",
+                    "homepage": "http://davejamesmiller.com/"
+                }
+            ],
+            "description": "A simple Laravel-style way to create breadcrumbs in Laravel 4+.",
+            "homepage": "http://laravel-breadcrumbs.davejamesmiller.com",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2016-08-28 16:57:03"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -564,6 +613,45 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "erusev/parsedown",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2015-10-04 16:44:32"
+        },
+        {
             "name": "infyomlabs/core-templates",
             "version": "5.3.x-dev",
             "source": {
@@ -893,6 +981,139 @@
             "time": "2016-01-25 15:38:17"
         },
         {
+            "name": "kodicms/laravel-assets",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KodiCMS/laravel-assets.git",
+                "reference": "47fbfd099e03b5a3230cec960de6a83c4066abe1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KodiCMS/laravel-assets/zipball/47fbfd099e03b5a3230cec960de6a83c4066abe1",
+                "reference": "47fbfd099e03b5a3230cec960de6a83c4066abe1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KodiCMS\\Assets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU GENERAL PUBLIC LICENSE"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com"
+                }
+            ],
+            "time": "2016-08-19 10:26:48"
+        },
+        {
+            "name": "kodicomponents/navigation",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KodiComponents/Navigation.git",
+                "reference": "5984f931ab743e3e4e4bf02cc8090e6e492d5bb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KodiComponents/Navigation/zipball/5984f931ab743e3e4e4bf02cc8090e6e492d5bb3",
+                "reference": "5984f931ab743e3e4e4bf02cc8090e6e492d5bb3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "kodicomponents/support": "0.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KodiComponents\\Navigation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com"
+                }
+            ],
+            "description": "The KodiCMS Support package.",
+            "homepage": "http://kodicms.com",
+            "keywords": [
+                "kodicms",
+                "laravel",
+                "menu",
+                "navigation"
+            ],
+            "time": "2016-09-29 09:21:48"
+        },
+        {
+            "name": "kodicomponents/support",
+            "version": "v0.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KodiComponents/Support.git",
+                "reference": "1ddb53e818a05a4a921f6645f6dcd47ec5e8248c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KodiComponents/Support/zipball/1ddb53e818a05a4a921f6645f6dcd47ec5e8248c",
+                "reference": "1ddb53e818a05a4a921f6645f6dcd47ec5e8248c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KodiComponents\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com"
+                }
+            ],
+            "description": "The KodiCMS Support package.",
+            "homepage": "http://kodicms.com",
+            "keywords": [
+                "kodicms",
+                "laravel",
+                "menu",
+                "navigation"
+            ],
+            "time": "2016-08-16 13:08:13"
+        },
+        {
             "name": "laracasts/flash",
             "version": "2.0.1",
             "source": {
@@ -1121,6 +1342,71 @@
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "http://laravelcollective.com",
             "time": "2016-08-04 03:49:50"
+        },
+        {
+            "name": "laravelrus/sleepingowl",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelRUS/SleepingOwlAdmin.git",
+                "reference": "86eb53a7035286bde2bb2d7bc83f0d27c4fcd1ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelRUS/SleepingOwlAdmin/zipball/86eb53a7035286bde2bb2d7bc83f0d27c4fcd1ef",
+                "reference": "86eb53a7035286bde2bb2d7bc83f0d27c4fcd1ef",
+                "shasum": ""
+            },
+            "require": {
+                "davejamesmiller/laravel-breadcrumbs": "^3.0",
+                "doctrine/dbal": "~2.3",
+                "erusev/parsedown": "1.*",
+                "illuminate/support": "5.*",
+                "kodicms/laravel-assets": "0.*",
+                "kodicomponents/navigation": "0.*",
+                "kodicomponents/support": "0.*",
+                "laravelcollective/html": "5.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-development": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SleepingOwl\\Admin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sleeping Owl",
+                    "email": "owl.sleeping@yahoo.com"
+                },
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com",
+                    "homepage": "http://www.kodicms.ru/"
+                }
+            ],
+            "description": "Administrative interface builder for Laravel.",
+            "homepage": "http://sleeping-owl.github.io",
+            "keywords": [
+                "admin",
+                "administrator",
+                "crud",
+                "laravel"
+            ],
+            "time": "2016-10-21 08:25:55"
         },
         {
             "name": "league/flysystem",
@@ -4338,7 +4624,8 @@
         "laravelcollective/html": 20,
         "infyomlabs/core-templates": 20,
         "infyomlabs/swagger-generator": 20,
-        "jlapp/swaggervel": 20
+        "jlapp/swaggervel": 20,
+        "laravelrus/sleepingowl": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

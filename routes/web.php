@@ -20,19 +20,6 @@ Route::get('/', function () {
 Route::resource('products','ProductController');
 
 Route::get('user', 'UserController@index');
-//Route::get('product',function(){
-//
-//
-//
-//    foreach ($products as $product){
-//        echo $product->name.'<br>  Created at: '.date('D', $product->created_at = time()).'<br>';
-//        echo $product->price.'<br><br>';
-//    }
-//
-//});
-//Route::get('products','ProductController@index');
-//
-//Route::get('products/show/{id}', ['as' => 'product.show','uses'=>'ProductController@show']);
 
 Auth::routes();
 

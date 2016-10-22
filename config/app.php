@@ -185,6 +185,11 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
+
+//        SleepingOwl4Provider
+
+        SleepingOwl\Admin\Providers\SleepingOwlServiceProvider::class,
+
     ],
 
     /*

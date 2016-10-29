@@ -15,12 +15,10 @@ class CreateReceiptsTable extends Migration
     {
         //
         Schema::create('receipts', function (Blueprint $table) {
-            $table->integer('product_id')->unsigned()->index();
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->integer('component_id')->unsigned()->index();
-            $table->foreign('component_id')->references('id')->on('components')->onDelete('cascade');
+            $table->integer('product_id')->unsigned();
+            $table->integer('component_id')->unsigned();
             $table->primary(['product_id', 'component_id']);
-            $table->integer('quantity');
+            $table->double('quantity',5,2);
         });
     }
 
@@ -32,5 +30,6 @@ class CreateReceiptsTable extends Migration
     public function down()
     {
         //
+        Schema::drop('receipts');
     }
 }

@@ -140,6 +140,8 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+
+
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -185,6 +187,9 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
+
+
+        SleepingOwl\Admin\Providers\SleepingOwlServiceProvider::class,
     ],
 
     /*

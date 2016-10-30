@@ -9,8 +9,8 @@
         <td>{{$product->name}}</td>
         <td>{{$product->price}}</td>
         <td>
-            {{link_to_route ('products.show','Show',$product->id)}}
-            {{link_to_route ('products.edit','Edit',$product->id)}}
+{{--            {{link_to_route ('products.show','Show',$product->id)}}--}}
+{{--            {{link_to_route ('products.edit','Edit',$product->id)}}--}}
 
             {{--{{link_to_route ('products.destroy','Delete',$product->id)}}--}}
             {{-- TODO : find how to destroy this stuff --}}

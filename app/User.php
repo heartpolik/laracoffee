@@ -26,4 +26,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
+
+    public function isRole($roleName)
+    {
+        if ($this->role->name == $roleName)
+            {
+                return true;
+            }
+        return false;
+    }
 }

@@ -18,6 +18,8 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->timestamps();
+            $table->softDeletes();
+            $table->string('photo')->default('/images/uploads/no-image.png');
             $table->double('price',5,2);
         });
 
@@ -31,5 +33,6 @@ class CreateProductsTable extends Migration
     public function down()
     {
         //
+        Schema::drop('products');
     }
 }

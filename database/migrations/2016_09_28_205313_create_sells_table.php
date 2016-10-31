@@ -16,12 +16,11 @@ class CreateSellsTable extends Migration
         //
         Schema::create('sells', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->index();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('product_id')->unsigned()->index();
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->integer('seller_id')->unsigned();
+            $table->integer('product_id')->unsigned();
             $table->integer('quantity');
             $table->timestamps();
+            $table->softDeletes();
 
         });
     }
@@ -34,5 +33,6 @@ class CreateSellsTable extends Migration
     public function down()
     {
         //
+        Schema::drop('sells');
     }
 }

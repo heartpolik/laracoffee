@@ -12,25 +12,23 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => str_random(10).' '.str_random(15),
-            'login'=> str_random(7),
-            'email' => str_random(10).'@'.str_random(5).'.'.str_random(3),
-            'password' => bcrypt('secret'),
-            'phone'=> '+00(000)000000',
+            'name' => 'Vasya-admin',
+            'email' => 'vasya@admin.com',
+            'password' => bcrypt('admin'),
+            'phone'=> '+11(111)1111111',
+            'role_id'=> 1,
         ]);
         DB::table('users')->insert([
-            'name' => str_random(10).' '.str_random(15),
-            'login'=> str_random(7),
-            'email' => str_random(10).'@'.str_random(5).'.'.str_random(3),
-            'password' => bcrypt('secret'),
-            'phone'=> '+00(000)000000',
+            'name' => 'Petya-seller',
+            'email' => 'petya@seller.com',
+            'password' => bcrypt('seller'),
+            'phone'=> '+22(222)2222222',
         ]);
         DB::table('users')->insert([
-            'name' => str_random(10).' '.str_random(15),
-            'login'=> str_random(7),
-            'email' => str_random(10).'@'.str_random(5).'.'.str_random(3),
-            'password' => bcrypt('secret'),
-            'phone'=> '+00(000)000000',
+            'name' => 'Sasha-buhgalter',
+            'email' => 'sasha@buhgalter.com',
+            'password' => bcrypt('buhgalter'),
+            'phone'=> '+33(333)3333333',
         ]);
     }
 }

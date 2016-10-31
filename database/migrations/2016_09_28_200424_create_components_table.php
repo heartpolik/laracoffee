@@ -17,8 +17,10 @@ class CreateComponentsTable extends Migration
         Schema::create('components', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->integer('quantity');
+            $table->double('quantity',5,2);
             $table->timestamps();
+            $table->softDeletes();
+            $table->string('photo')->default('/images/uploads/no-image.png');
             $table->double('price',5,2);
         });
     }
@@ -31,5 +33,6 @@ class CreateComponentsTable extends Migration
     public function down()
     {
         //
+        Schema::drop('components');
     }
 }
